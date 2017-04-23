@@ -1,0 +1,98 @@
+/* app css stylesheet */
+html, 
+body {
+    height: 100%;
+    font-family: Verdana;
+}
+
+.row {
+	margin: 0;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.titlebar {
+	height: 30px;
+	background-color: #CCC;
+}
+
+.buttonbar {
+	height: 30px;
+	background-color: #C44;
+}
+
+.exam {
+	position: absolute;
+	top: 60px;
+	bottom: 0;
+}
+
+.left-side {
+	border-right: 2px solid blue;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.exam-track {
+	font-weight: bold;
+}
+
+.exam-body {
+	white-space: pre-wrap;
+}
+
+.exam-form, form {
+	height: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 90%;
+	border: none;
+	resize: none;
+}
+
+button {
+	float: right;
+}
+
+.unselectable {
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+	
+	cursor: pointer;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin-top: 2px;
+    padding: 3px;
+}

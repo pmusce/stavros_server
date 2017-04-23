@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <div class="text-center titlebar">Writing: 1 of 2</div>
+  <div class="text-center buttonbar"> </div>
+  <div class="row exam">
+    <div class="col-md-6 left-side">
+      <div class="exam-track">
+        Summarize the points made in the lecture and explaining how they cast doubt on points made in the reading.
+        <ul>
+          <li>Time: 20 minutes</li>
+          <li>Suggested Essay Length: 150-200 words</li>
+        </ul>
+      </div>
+      <div class="exam-body">
+<h2>Reading 1</h2>
+<p>In many organizations, perhaps the best way to approach certain new projects is to assemble a group of people into a team. Having a team of people attack a project offers several advantages. First of all, a group of people has a wider range of knowledge, expertise, and skills than any single individual is likely to possess. Also, because of the numbers of people involved and the greater resources they possess, a group can work more quickly in response to the task assigned to it and can come up with highly creative solutions to problems and issues. Sometimes these creative solutions come about because a group is more likely to make risky decisions that an individual might not undertake. This is because the group spreads responsibility for a decision to all the members and thus no single individual can be held accountable if the decision turns out to be wrong.</p>
+<p>Taking part in a group process can be very rewarding for members of the team. Team members who have a voice in making a decision will no doubt feel better about carrying out the work that is entailed by that decision than they might doing work that is imposed on them by others. Also, the individual team member has a much better chance to “shine,” to get his or her contributions and ideas not only recognized but recognized as highly significant, because a team’s overall results can be more far-reaching and have greater impact than what might have otherwise been possible for the person to accomplish or contribute working alone.</p>
+<h2>Lecture Transcribed by professor 1</h2>
+<p>Now I want to tell you about what a company found when it decided that it would turn over some of its new projects to teams of people, and make the team responsible for planning the projects and getting the work done. After about six months, the company took a look at how well the teams performed. </p>
+<p>On virtually every team, some members got almost a “free ride”. They didn’t contribute much at all, but if their team did a good job, they nevertheless benefited from the recognition the team got. And what about group members who worked especially well and who provided a lot of insight on problems and issues? Well, the recognition for a job well done went to the group as a whole, no names were named. So it won’t surprise you to learn that when the real contributors were asked how they felt about the group process, their attitude was just the opposite of what the reading predicts. </p>
+<p>Another finding was that some projects didn’t move very quickly, because it took so long to reach consensus. It took many meetings to build the agreement among group members about how they would move the project along. On the other hand, there were other instances where one or two people managed to become very influential over what their group did. Sometimes when those influencers said “That will never work” about an idea the group was developing, the idea was quickly dropped instead of being further discussed. And then there was another occasion when a couple influencers convinced the group that a plan of theirs was “highly creative.” And even though some members tried to warn the rest of the group that the project was moving in directions that might not work, they were basically ignored by other group members. Can you guess the ending to this story? When the project failed, the blame was placed on all the members of the group.</p>
+
+      </div>
+    </div>
+    <div class="col-md-6 exam-form">
+      <form action="/first" method="post">
+        <textarea id='text_body' autofocus="true" spellcheck="false" name="text_body"></textarea>
+        <input type="text" name="seconds" id="seconds" hidden></input>
+        <input type="text" name="type" value="normal" hidden></input>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="typo-js/typo.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

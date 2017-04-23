@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <div class="text-center titlebar">Writing: 2 of 2</div>
+  <div class="text-center buttonbar"> </div>
+  <div class="row exam">
+    <div class="col-md-6 left-side">
+      <div class="exam-track">
+        Summarize the points made in the lecture, being sure to explain how they cast doubt on specific points made in the reading passage.
+        <ul>
+          <li>Time: 20 minutes</li>
+          <li>Suggested Essay Length: 150-200 words</li>
+        </ul>
+      </div>
+      <div class="exam-body">
+<h2>Reading 2</h2>
+<p>In an effort to encourage ecologically sustainable forestry practices, an international organization started issuing certificates to wood companies that meet high ecological standards by conserving resources and recycling materials. Companies that receive this certification can attract customers by advertising their products as “ecocertified.” However, it is unlikely that wood companies in the United States will do the same, for several reasons.</p>
+<p>First, American consumers are exposed to so much advertising that they would not value or even pay attention to the ecocertification label. Because so many mediocre products are labelled as “new” or “improved,” American consumers do not place much trust in advertising claims in general.</p>
+<p>Second, ecocertified wood will be more expensive than uncertified wood because in order to earn ecocertification, a wood company must pay to have its business examined by a certification agency. This additional cost gets passed on to consumers. American consumers tend to be strongly motivated by price, and therefore they are likely to choose cheaper uncertified wood products. Accordingly, American wood companies will prefer to keep their prices low rather than obtain ecocertification.</p>
+<p>Third, although some people claim that it always makes good business sense for American companies to keep up with the developments in the rest of the world, this argument is not convincing. Pursuing certification would make sense for American wood companies only if they marketed most of their products abroad. But this is not the case– American wood businesses sell most of their products in the United States, catering to a very large customer base that is satisfied with the merchandise.</p>
+<h2>Lecture Transcribed by professor 2</h2>
+<p>Well, despite what many people say, there’s good reason to think that many American wood companies will eventually seek ecocertification for their wood products. First off, consumers in the United States don’t treat all advertising the same. They distinguish between advertising claims that companies make about their own products and claims made by independent certification agencies. Americans have a lot of confidence in independent consumer agencies. Thus, ecologically minded Americans are likely to react very favorably to wood products ecologically certified by an independent organization with an international reputation for trustworthiness.</p>
+<p>Second, it’s true that American consumers care a lot about price – who doesn’t? But studies of how consumers make decisions show that price alone determines consumers’ decisions only when the price of one competing product is much higher or lower than another. When the price difference between the two products is small–say, less than five percent, as is the case with certified wood– Americans often do choose on factors other than price. And Americans are becoming increasingly convinced of the value of preserving and protecting the environment.</p>
+<p>Finally, US wood companies should definitely pay attention to what’s going on in the wood business internationally, not because of foreign consumers, but because of foreign competition. As I just told you, there’s a good chance that many American consumers will be interested in ecocertified products. And guess what, if American companies are slow at capturing those customers, you can be sure that foreign companies will soon start crowding into the American market, offering ecocertified wood that domestic companies don’t.</p>
+      </div>
+    </div>
+    <div class="col-md-6 exam-form">
+      <form action="/second" method="post">
+        <textarea autofocus="true" spellcheck="false" name="text_body"></textarea>
+        <input type="text" name="seconds" id="seconds" hidden></input>
+        <input type="text" name="type" value="enhanced" hidden></input>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="typo-js/typo.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
