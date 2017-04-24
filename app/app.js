@@ -15,8 +15,8 @@ function play() {
 	window.speechSynthesis.speak(msg);
 }
 
-function read(string) {
-
+function stop() {
+	window.speechSynthesis.cancel();
 }
 
 function getSelectionText() {
