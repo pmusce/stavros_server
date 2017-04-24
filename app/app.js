@@ -16,6 +16,7 @@ function play() {
 }
 
 function stop() {
+	chunks = []
 	window.speechSynthesis.cancel();
 }
 
