@@ -1,6 +1,22 @@
+var chunks;
 function play() {
-	var msg = new SpeechSynthesisUtterance(getSelectionText());
+	chunks = getSelectionText().split('.');
+	console.log(chunks);
+	var i = 0;
+	var msg = new SpeechSynthesisUtterance(chunks[0]+'.');
+	msg.onend = function callback() {
+		i=i+1;
+		if(i==chunks.length) 
+			return;
+		var newMsg = new SpeechSynthesisUtterance(chunks[i]);
+		newMsg.onend = callback;
+		window.speechSynthesis.speak(newMsg);
+	}
 	window.speechSynthesis.speak(msg);
+}
+
+function read(string) {
+
 }
 
 function getSelectionText() {
