@@ -45,6 +45,6 @@ function upTime(secs) {
 
 $('#text_body').on('input', function() {
 	console.log("ASD");
-    var wordCount = $(this).val().split(' ').length;
+    var wordCount = $(this).val().split(' ').filter(function(x) {return x!=""}).length;
     $('#wc').text(wordCount);
 });
