@@ -41,3 +41,10 @@ function upTime(secs) {
   clearTimeout(upTime.to);
   upTime.to=setTimeout(function(){ upTime(secs+1); },1000);
 }
+
+
+$('#text_body').on('input', function() {
+	console.log("ASD");
+    var wordCount = $(this).val().split(' ').length;
+    $('#wc').text(wordCount);
+});
